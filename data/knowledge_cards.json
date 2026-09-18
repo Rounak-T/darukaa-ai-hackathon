@@ -1,0 +1,602 @@
+[
+  {
+    "id": "KC001",
+    "title": "Legume-based cover cropping raises soil organic carbon",
+    "domain": "soil_health",
+    "intervention": "Legume cover crops (e.g. Sesbania, cowpea, sunn hemp) sown in fallow windows",
+    "mechanism": "Biological nitrogen fixation plus high-lignin root turnover increases carbon input below ground; continuous root exudation feeds microbial and fungal communities, which stabilise carbon in soil aggregates.",
+    "quantified_effect": "Soil organic carbon typically rises 15-25% relative to bare fallow over 2-3 seasons in tropical/subtropical systems.",
+    "metrics_improved": [
+      "soil_organic_carbon",
+      "microbial_diversity",
+      "soil_moisture_retention",
+      "pollinator_abundance"
+    ],
+    "preconditions": [
+      "rainfall_low",
+      "rainfall_moderate",
+      "monoculture",
+      "low_soc"
+    ],
+    "time_horizon": "medium",
+    "source": "FAO, Soil Organic Carbon: the hidden potential (2017)",
+    "source_tier": "tier1_intergovernmental",
+    "verified": false
+  },
+  {
+    "id": "KC002",
+    "title": "Cover crops build soil structure",
+    "domain": "soil_health",
+    "intervention": "Plant mixed cover crops such as legumes plus grasses during fallow periods and terminate them before they compete with the following crop.",
+    "mechanism": "Living roots add carbon through root biomass and exudates while different rooting depths redistribute nutrients and create continuous biopores. Residues protect aggregates from raindrop impact and microbial decomposition converts plant material into soil organic matter.",
+    "quantified_effect": "Cover crops generally increase soil organic carbon and water infiltration while reducing erosion and nutrient losses; FAO identifies nutrient recycling, improved structure and greater infiltration as consistent functions.",
+    "metrics_improved": [
+      "soil_organic_carbon",
+      "water_infiltration",
+      "aggregate_stability",
+      "nitrate_leaching"
+    ],
+    "preconditions": [
+      "bare_fallow",
+      "low_soc",
+      "erosion_risk",
+      "seasonal_rainfall"
+    ],
+    "time_horizon": "medium",
+    "source": "FAO, Conservation Agriculture: Soil Organic Cover",
+    "source_tier": "tier1_intergovernmental",
+    "verified": false
+  },
+  {
+    "id": "KC003",
+    "title": "Reduced tillage preserves soil carbon",
+    "domain": "soil_health",
+    "intervention": "Replace repeated intensive ploughing with reduced-tillage or no-till seeding while retaining crop residues on the soil surface.",
+    "mechanism": "Less mechanical disturbance reduces aggregate disruption and exposure of physically protected organic matter to microbial oxidation. Surface residues reduce raindrop energy and evaporation while soil pores created by roots and soil fauna remain more continuous.",
+    "quantified_effect": "Conservation agriculture generally increases infiltration and soil-water retention and can increase soil organic carbon, although carbon responses vary with climate, soil depth and management history.",
+    "metrics_improved": [
+      "soil_organic_carbon",
+      "water_infiltration",
+      "soil_aggregate_stability",
+      "soil_erosion_rate"
+    ],
+    "preconditions": [
+      "erosion_prone",
+      "intensive_tillage",
+      "residue_available",
+      "rainfed"
+    ],
+    "time_horizon": "medium",
+    "source": "FAO, Conservation Agriculture and the Importance of Soil Organic Matter",
+    "source_tier": "tier1_intergovernmental",
+    "verified": false
+  },
+  {
+    "id": "KC004",
+    "title": "Biochar adds persistent soil carbon",
+    "domain": "soil_health",
+    "intervention": "Apply appropriately produced agricultural-residue biochar to degraded soil at a locally tested agronomic rate.",
+    "mechanism": "Pyrolysis converts part of biomass carbon into aromatic, chemically persistent structures that decompose more slowly than fresh plant residues. Biochar surfaces can also provide pore space for water and microbial habitats, with effects depending strongly on feedstock, pyrolysis conditions and soil texture.",
+    "quantified_effect": "A global meta-analysis of 64 field studies reported an average increase of about 29% in soil organic carbon stocks after biochar application, with effects varying substantially among sites.",
+    "metrics_improved": [
+      "soil_organic_carbon",
+      "soil_water_holding_capacity",
+      "soil_bulk_density",
+      "microbial_biomass_carbon"
+    ],
+    "preconditions": [
+      "low_soc",
+      "coarse_textured_soil",
+      "organic_residue_available",
+      "degraded_soil"
+    ],
+    "time_horizon": "medium",
+    "source": "Li et al. (2021), Soil Organic Carbon Sequestration after Biochar Application: A Global Meta-Analysis, Agronomy, 11, 2474",
+    "source_tier": "tier3_peer_reviewed",
+    "verified": false
+  },
+  {
+    "id": "KC005",
+    "title": "Mulching reduces evaporation and erosion",
+    "domain": "soil_health",
+    "intervention": "Maintain a surface mulch layer using straw, crop residues, leaves or other suitable plant material.",
+    "mechanism": "The mulch physically shields soil from raindrop impact and reduces the vapor-pressure gradient between soil and atmosphere, lowering direct evaporation. As residues decompose, organic matter supports soil organisms and aggregate formation, creating connected pores that promote infiltration.",
+    "quantified_effect": "FAO reports that mulch can substantially reduce evaporation and increase infiltration, while decomposing organic material contributes to aggregate stability and erosion resistance.",
+    "metrics_improved": [
+      "soil_moisture",
+      "water_infiltration",
+      "soil_erosion_rate",
+      "soil_organic_matter"
+    ],
+    "preconditions": [
+      "high_evaporation",
+      "erosion_risk",
+      "residue_available",
+      "rainfed"
+    ],
+    "time_horizon": "short",
+    "source": "FAO TECA (2020), Mulching in Organic Agriculture",
+    "source_tier": "tier1_intergovernmental",
+    "verified": false
+  },
+  {
+    "id": "KC006",
+    "title": "Gypsum restores sodic soils",
+    "domain": "soil_health",
+    "intervention": "Apply gypsum according to soil-test-derived gypsum requirement and provide adequate drainage and leaching irrigation on sodic or saline-sodic soils.",
+    "mechanism": "Calcium from gypsum replaces exchangeable sodium on negatively charged clay surfaces. The resulting calcium-dominated exchange complex promotes clay flocculation, restoring pore continuity so displaced sodium can be leached below the root zone.",
+    "quantified_effect": "ICAR identifies gypsum combined with drainage and leaching as an effective management approach for sodic and saline-sodic soils; the required gypsum dose is site-specific rather than a universal rate.",
+    "metrics_improved": [
+      "exchangeable_sodium_percentage",
+      "electrical_conductivity",
+      "soil_infiltration",
+      "soil_pH"
+    ],
+    "preconditions": [
+      "sodic_soil",
+      "saline_sodic",
+      "poor_infiltration",
+      "drainage_available"
+    ],
+    "time_horizon": "medium",
+    "source": "Gupta, Choudhary & Shukla, ICAR Indian Farming, Management of Salt Affected Soils for Crop Production",
+    "source_tier": "tier2_national_agency",
+    "verified": false
+  },
+  {
+    "id": "KC007",
+    "title": "IPM protects natural enemies",
+    "domain": "biodiversity",
+    "intervention": "Implement integrated pest management using pest monitoring, economic thresholds, resistant varieties, biological control, sanitation and targeted pesticides only when thresholds are exceeded.",
+    "mechanism": "Broad-spectrum pesticide applications can kill predators and parasitoids that provide biological pest suppression, allowing pest resurgence. IPM preserves these trophic interactions while using targeted control only when pest density is high enough to justify intervention.",
+    "quantified_effect": "FAO reports that IPM reduces pesticide use and pesticide risks while supporting natural pest control and pollination; the magnitude of pesticide reduction is crop- and site-specific.",
+    "metrics_improved": [
+      "natural_enemy_abundance",
+      "pesticide_application_rate",
+      "pollinator_abundance",
+      "pest_predation_rate"
+    ],
+    "preconditions": [
+      "high_pesticide_use",
+      "pest_monitoring_possible",
+      "natural_enemies_present",
+      "cropland"
+    ],
+    "time_horizon": "short",
+    "source": "FAO, Integrated Pest Management",
+    "source_tier": "tier1_intergovernmental",
+    "verified": false
+  },
+  {
+    "id": "KC008",
+    "title": "Hedgerows provide pollinator habitat",
+    "domain": "biodiversity",
+    "intervention": "Establish species-rich native hedgerows containing flowering plants, shrubs and structurally diverse vegetation along field margins.",
+    "mechanism": "Hedgerows provide continuous floral resources, nesting sites and overwintering refuges that reduce the distance pollinators and natural enemies must travel between habitat patches. Their vegetation also reduces wind exposure and creates a structurally heterogeneous edge habitat.",
+    "quantified_effect": "Agricultural diversification and increased landscape complexity consistently increase pollinator and other beneficial-organism abundance, although the response depends on plant composition, hedge age and surrounding land use.",
+    "metrics_improved": [
+      "pollinator_abundance",
+      "pollinator_species_richness",
+      "natural_enemy_abundance",
+      "flowering_plant_richness"
+    ],
+    "preconditions": [
+      "simplified_landscape",
+      "field_margins_available",
+      "pollinator_decline",
+      "cropland"
+    ],
+    "time_horizon": "medium",
+    "source": "Dainese et al. (2019), A global synthesis reveals biodiversity-mediated benefits for crop production, Science Advances, 5, eaax0121",
+    "source_tier": "tier3_peer_reviewed",
+    "verified": false
+  },
+  {
+    "id": "KC009",
+    "title": "Control invasive alien species early",
+    "domain": "biodiversity",
+    "intervention": "Detect invasive populations early and combine mechanical removal, targeted herbicide or biological control with repeated follow-up monitoring and native-species revegetation.",
+    "mechanism": "Invasive species can monopolize light, nutrients, water and space, alter disturbance regimes and disrupt native species interactions. Removing propagule sources and preventing reinvasion allows native recruitment and competitive interactions to recover.",
+    "quantified_effect": "IPBES identifies invasive alien species as a major direct driver of biodiversity loss and finds that prevention, early detection and rapid response are generally more effective than delayed control.",
+    "metrics_improved": [
+      "native_species_richness",
+      "invasive_species_cover",
+      "native_plant_recruitment",
+      "habitat_condition"
+    ],
+    "preconditions": [
+      "invasive_species_present",
+      "early_detection",
+      "native_seed_source",
+      "disturbed_habitat"
+    ],
+    "time_horizon": "medium",
+    "source": "IPBES (2023), Thematic Assessment Report on Invasive Alien Species and their Control",
+    "source_tier": "tier1_intergovernmental",
+    "verified": false
+  },
+  {
+    "id": "KC010",
+    "title": "Landscape heterogeneity supports biodiversity",
+    "domain": "biodiversity",
+    "intervention": "Increase landscape-scale heterogeneity by retaining natural vegetation patches, field margins, hedgerows, ponds and multiple crop types rather than creating continuous uniform fields.",
+    "mechanism": "Different habitat structures provide complementary food, nesting, shelter and dispersal resources for species with different ecological requirements. Greater connectivity and habitat diversity reduce the probability that a single local disturbance eliminates resources across the whole landscape.",
+    "quantified_effect": "A global meta-analysis of 157 peer-reviewed studies found that more complex agricultural landscapes support higher biodiversity, including greater richness and abundance of vertebrates, invertebrates and plants.",
+    "metrics_improved": [
+      "species_richness",
+      "species_abundance",
+      "pollinator_abundance",
+      "habitat_connectivity"
+    ],
+    "preconditions": [
+      "fragmented_landscape",
+      "monoculture",
+      "natural_patches_remaining",
+      "agricultural_matrix"
+    ],
+    "time_horizon": "long",
+    "source": "Tamburini et al. (2020), Agricultural landscape complexity drives biodiversity patterns, Proceedings of the National Academy of Sciences",
+    "source_tier": "tier3_peer_reviewed",
+    "verified": false
+  },
+  {
+    "id": "KC011",
+    "title": "Crop diversification increases associated biodiversity",
+    "domain": "biodiversity",
+    "intervention": "Replace continuous monoculture with crop rotation, intercropping or mixtures of crop species with contrasting rooting depths and growth periods.",
+    "mechanism": "Different crops create different resource pulses, root architectures and canopy structures, increasing the number of ecological niches available to soil organisms and above-ground fauna. Rotation also interrupts host-specific pest and pathogen life cycles and can support more diverse food webs.",
+    "quantified_effect": "A synthesis covering 5,156 experiments found that crop diversification increased associated non-crop biodiversity by a median 24%, while effects varied among diversification strategies.",
+    "metrics_improved": [
+      "non_crop_species_richness",
+      "soil_microbial_diversity",
+      "pollinator_abundance",
+      "pest_regulation"
+    ],
+    "preconditions": [
+      "monoculture",
+      "low_biodiversity",
+      "crop_rotation_possible",
+      "diverse_seed_access"
+    ],
+    "time_horizon": "medium",
+    "source": "Tamburini et al. (2020), Agricultural diversification promotes multiple ecosystem services without compromising yield, Nature Ecology & Evolution, 4, 1469-1477",
+    "source_tier": "tier3_peer_reviewed",
+    "verified": false
+  },
+  {
+    "id": "KC012",
+    "title": "Agroforestry increases soil carbon",
+    "domain": "land_use",
+    "intervention": "Integrate suitable perennial trees with crops or livestock using alley cropping, silvopasture or other locally appropriate agroforestry designs.",
+    "mechanism": "Trees add carbon through litterfall, woody biomass and deep roots while their roots access soil layers below the main crop rooting zone. Tree canopies also modify microclimate and root-derived carbon inputs, increasing the amount and persistence of carbon entering soil.",
+    "quantified_effect": "A 2025 global meta-analysis of 561 paired observations found that agroforestry increased soil organic carbon by about 10.7% on average, with larger responses reported in arid zones.",
+    "metrics_improved": [
+      "soil_organic_carbon",
+      "soil_total_nitrogen",
+      "microbial_biomass",
+      "habitat_structure"
+    ],
+    "preconditions": [
+      "cropland",
+      "tree_species_suitable",
+      "long_term_land_access",
+      "water_competition_manageable"
+    ],
+    "time_horizon": "long",
+    "source": "Pan et al. (2025), Agroforestry increases soil carbon sequestration, especially in arid areas: A global meta-analysis, CATENA, 249, 108667",
+    "source_tier": "tier3_peer_reviewed",
+    "verified": false
+  },
+  {
+    "id": "KC013",
+    "title": "Riparian buffers retain farm nutrients",
+    "domain": "land_use",
+    "intervention": "Establish permanent vegetated riparian buffer strips using grasses, shrubs and native trees between agricultural fields and streams.",
+    "mechanism": "Vegetation slows overland flow, increasing sediment deposition and infiltration before runoff reaches the stream. Plant uptake removes dissolved nutrients, while oxygen-poor saturated microsites in riparian soils can support microbial denitrification that converts nitrate to atmospheric N2.",
+    "quantified_effect": "Meta-analysis shows that riparian zones can substantially retain agricultural nitrogen, with effectiveness increasing with appropriate buffer width and vegetation; performance varies with hydrology and buffer design.",
+    "metrics_improved": [
+      "stream_nitrate",
+      "sediment_load",
+      "phosphorus_export",
+      "riparian_species_richness"
+    ],
+    "preconditions": [
+      "stream_adjacent_farmland",
+      "nutrient_runoff",
+      "riparian_land_available",
+      "surface_runoff"
+    ],
+    "time_horizon": "medium",
+    "source": "Lyu et al. (2021), Nitrogen retention effect of riparian zones in agricultural areas: A meta-analysis, Journal of Cleaner Production, 315, 128143",
+    "source_tier": "tier3_peer_reviewed",
+    "verified": false
+  },
+  {
+    "id": "KC014",
+    "title": "Restore wetlands and farm ponds",
+    "domain": "land_use",
+    "intervention": "Restore degraded wetlands or create shallow vegetated farm ponds with appropriate hydrologic connectivity and native aquatic vegetation.",
+    "mechanism": "Wetland plants slow water movement and promote sedimentation, while microbial communities transform and retain nitrogen and phosphorus under alternating aerobic and anaerobic conditions. Shallow water, emergent vegetation and saturated soils also create breeding and feeding habitat for amphibians, aquatic invertebrates and birds.",
+    "quantified_effect": "Wetland restoration can increase wetland habitat quality and nutrient retention, but climate benefits are site-dependent because anaerobic conditions can also increase methane emissions.",
+    "metrics_improved": [
+      "wetland_species_richness",
+      "nitrogen_retention",
+      "phosphorus_retention",
+      "water_storage"
+    ],
+    "preconditions": [
+      "degraded_wetland",
+      "seasonal_water",
+      "nutrient_runoff",
+      "native_aquatic_species"
+    ],
+    "time_horizon": "long",
+    "source": "IPCC (2019), 2019 Refinement to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Wetlands",
+    "source_tier": "tier1_intergovernmental",
+    "verified": false
+  },
+  {
+    "id": "KC015",
+    "title": "Rest-rotation grazing protects rangeland",
+    "domain": "land_use",
+    "intervention": "Divide grazing land into paddocks and rotate livestock through them while providing planned rest periods based on vegetation recovery rather than fixed calendar dates.",
+    "mechanism": "Rest periods allow grazed plants to rebuild leaf area and root carbohydrate reserves, maintaining photosynthetic capacity and root growth. Controlled stocking and recovery reduce repeated trampling and selective overgrazing, allowing litter accumulation and soil cover to recover.",
+    "quantified_effect": "Managed grazing can increase vegetation cover and reduce erosion where stocking pressure is matched to carrying capacity; outcomes are strongly dependent on stocking rate, rainfall and grazing history.",
+    "metrics_improved": [
+      "vegetation_cover",
+      "soil_organic_carbon",
+      "bare_soil_fraction",
+      "soil_erosion_rate"
+    ],
+    "preconditions": [
+      "rangeland",
+      "overgrazing",
+      "paddock_access",
+      "seasonal_rainfall"
+    ],
+    "time_horizon": "medium",
+    "source": "FAO, Sustainable Grassland Management: Concepts and Approaches",
+    "source_tier": "tier1_intergovernmental",
+    "verified": false
+  },
+  {
+    "id": "KC016",
+    "title": "Harvest rainwater to reduce runoff",
+    "domain": "land_use",
+    "intervention": "Install contour bunds, farm ponds, check dams or other small-scale rainwater-harvesting structures suited to local slope and drainage conditions.",
+    "mechanism": "Structures slow runoff velocity and temporarily store rainfall, increasing the residence time available for infiltration into the soil. Captured water can later supplement irrigation or recharge shallow groundwater, while reduced flow velocity decreases sediment detachment and transport.",
+    "quantified_effect": "FAO identifies rainwater harvesting as a means to increase soil moisture, reduce erosion and improve reliability of water supply in rainfed systems; performance depends on rainfall, soil and structure design.",
+    "metrics_improved": [
+      "soil_moisture",
+      "water_infiltration",
+      "runoff_volume",
+      "sediment_loss"
+    ],
+    "preconditions": [
+      "rainfed",
+      "seasonal_rainfall",
+      "runoff_prone",
+      "suitable_slope"
+    ],
+    "time_horizon": "short",
+    "source": "FAO, Water Harvesting and Storage",
+    "source_tier": "tier1_intergovernmental",
+    "verified": false
+  },
+  {
+    "id": "KC017",
+    "title": "Match nitrogen supply to crop demand",
+    "domain": "climate",
+    "intervention": "Use soil testing, crop-demand-based fertilizer scheduling, split nitrogen applications and legume rotations to match available nitrogen with crop uptake.",
+    "mechanism": "When fertilizer nitrogen exceeds plant demand, ammonium and nitrate accumulate and become vulnerable to leaching, volatilization and microbial conversion to nitrous oxide. Synchronizing nitrogen release with crop uptake increases nitrogen-use efficiency and reduces the amount available for these loss pathways.",
+    "quantified_effect": "FAO identifies improved nitrogen-use efficiency and reduced nitrogen losses as key measures for lowering pollution and greenhouse-gas impacts; the achievable reduction is strongly site- and management-specific.",
+    "metrics_improved": [
+      "nitrogen_use_efficiency",
+      "nitrous_oxide_emissions",
+      "nitrate_leaching",
+      "crop_nitrogen_uptake"
+    ],
+    "preconditions": [
+      "high_n_input",
+      "fertilizer_available",
+      "soil_testing",
+      "cropland"
+    ],
+    "time_horizon": "short",
+    "source": "FAO (2025), Sustainable Nitrogen Management in Agrifood Systems",
+    "source_tier": "tier1_intergovernmental",
+    "verified": false
+  },
+  {
+    "id": "KC018",
+    "title": "Protect forests to retain carbon",
+    "domain": "climate",
+    "intervention": "Prevent conversion of intact or high-carbon forests through protected areas, deforestation controls, fire management and enforcement against illegal clearing.",
+    "mechanism": "Forest biomass and soils contain carbon accumulated through long-term photosynthesis; clearing rapidly transfers much of this carbon to the atmosphere through combustion and decomposition. Maintaining intact vegetation also preserves root networks, canopy microclimates and soil organic matter that regulate water and carbon cycling.",
+    "quantified_effect": "IPCC identifies reducing deforestation and forest degradation as major land-based mitigation measures because avoided biomass and soil carbon losses can be substantial.",
+    "metrics_improved": [
+      "aboveground_carbon_stock",
+      "soil_organic_carbon",
+      "forest_cover",
+      "habitat_connectivity"
+    ],
+    "preconditions": [
+      "intact_forest",
+      "deforestation_pressure",
+      "high_carbon_stock",
+      "enforcement_capacity"
+    ],
+    "time_horizon": "long",
+    "source": "IPCC (2022), Climate Change 2022: Mitigation of Climate Change, Chapter 7: Agriculture, Forestry and Other Land Uses",
+    "source_tier": "tier1_intergovernmental",
+    "verified": false
+  },
+  {
+    "id": "KC019",
+    "title": "Reforest degraded land with native species",
+    "domain": "climate",
+    "intervention": "Restore degraded forest landscapes using locally appropriate native tree species, assisted natural regeneration and protection from repeated fire or grazing.",
+    "mechanism": "Growing vegetation removes atmospheric CO2 through photosynthesis and stores carbon in woody biomass and soil. Re-establishing multilayer vegetation also rebuilds habitat structure, root networks and litter inputs that support soil organisms and improve hydrological regulation.",
+    "quantified_effect": "Reforestation and forest restoration can increase above- and below-ground carbon stocks while rebuilding habitat, but sequestration rates vary substantially with climate, species, soil and restoration method.",
+    "metrics_improved": [
+      "aboveground_carbon_stock",
+      "soil_organic_carbon",
+      "native_species_richness",
+      "vegetation_cover"
+    ],
+    "preconditions": [
+      "degraded_land",
+      "native_seed_source",
+      "fire_manageable",
+      "grazing_pressure_control"
+    ],
+    "time_horizon": "long",
+    "source": "IPCC (2022), Climate Change 2022: Mitigation of Climate Change, Chapter 7: Agriculture, Forestry and Other Land Uses",
+    "source_tier": "tier1_intergovernmental",
+    "verified": false
+  },
+  {
+    "id": "KC020",
+    "title": "Manage groundwater extraction",
+    "domain": "climate",
+    "intervention": "Set groundwater abstraction limits using monitored water levels, meter high-volume wells and combine demand management with managed aquifer recharge where hydrogeologically appropriate.",
+    "mechanism": "Excess pumping lowers hydraulic heads and can disconnect shallow groundwater from streams, wetlands and vegetation-dependent ecosystems. Matching withdrawals to recharge reduces drawdown and helps maintain baseflow, while managed recharge stores water underground for later use.",
+    "quantified_effect": "FAO identifies groundwater recharge and improved irrigation-water management as important components of sustainable agricultural water management; quantitative benefits depend on aquifer properties and recharge rates.",
+    "metrics_improved": [
+      "groundwater_level",
+      "aquifer_storage",
+      "stream_baseflow",
+      "irrigation_water_productivity"
+    ],
+    "preconditions": [
+      "groundwater_depletion",
+      "irrigated_agriculture",
+      "aquifer_monitoring",
+      "recharge_potential"
+    ],
+    "time_horizon": "long",
+    "source": "FAO, The State of the World's Land and Water Resources for Food and Agriculture",
+    "source_tier": "tier1_intergovernmental",
+    "verified": false
+  },
+  {
+    "id": "KC021",
+    "title": "Use agroforestry for climate buffering",
+    "domain": "climate",
+    "intervention": "Establish tree-crop or silvopastoral systems using locally adapted tree species positioned to reduce wind exposure without creating excessive crop competition.",
+    "mechanism": "Tree canopies intercept radiation and wind, modifying near-surface temperature, humidity and evapotranspiration. Deep-rooted trees also access water and nutrients from soil layers that annual crops may not reach, while woody biomass stores carbon over longer periods.",
+    "quantified_effect": "Global syntheses find that agroforestry increases carbon storage and multiple regulating ecosystem services, with stronger soil-carbon responses reported in drier environments.",
+    "metrics_improved": [
+      "aboveground_carbon_stock",
+      "soil_organic_carbon",
+      "soil_moisture",
+      "microclimate_temperature"
+    ],
+    "preconditions": [
+      "heat_stress",
+      "wind_exposure",
+      "tree_species_suitable",
+      "water_competition_manageable"
+    ],
+    "time_horizon": "long",
+    "source": "FAO, Agroforestry; Pan et al. (2025), CATENA 249, 108667",
+    "source_tier": "tier1_intergovernmental",
+    "verified": false
+  },
+  {
+    "id": "KC022",
+    "title": "Reduce pesticide exposure to aquatic systems",
+    "domain": "human_impact",
+    "intervention": "Use IPM thresholds, targeted application, drift-reduction equipment and vegetated buffer strips to minimize pesticide movement beyond treated fields.",
+    "mechanism": "Reducing unnecessary applications decreases the quantity of active ingredients available for runoff, spray drift and drainage losses. Vegetated buffers intercept contaminated sediment and runoff, while targeted treatment reduces exposure of non-target organisms outside pest hotspots.",
+    "quantified_effect": "FAO identifies IPM and pesticide-risk reduction as approaches that reduce pesticide residues and environmental exposure, with the magnitude of reduction depending on crop and pest-management system.",
+    "metrics_improved": [
+      "pesticide_load_in_water",
+      "pesticide_application_rate",
+      "aquatic_invertebrate_abundance",
+      "pollinator_abundance"
+    ],
+    "preconditions": [
+      "pesticide_use",
+      "surface_water_nearby",
+      "pest_monitoring",
+      "runoff_risk"
+    ],
+    "time_horizon": "short",
+    "source": "FAO, Integrated Pest Management and Pesticide Risk Reduction",
+    "source_tier": "tier1_intergovernmental",
+    "verified": false
+  },
+  {
+    "id": "KC023",
+    "title": "Restore native habitat after land conversion",
+    "domain": "human_impact",
+    "intervention": "Convert selected low-productivity or degraded land back to native vegetation using assisted natural regeneration, native planting and removal of persistent disturbances.",
+    "mechanism": "Removing chronic disturbance allows native plants to recruit and rebuild vertical vegetation layers, increasing habitat niches and food-web complexity. Increasing plant biomass also restores litter inputs, root carbon and soil structure that were depleted during intensive land use.",
+    "quantified_effect": "Ecological restoration can increase vegetation cover, habitat structure and biodiversity over time, but recovery rates vary with degradation severity, landscape connectivity and the availability of native propagules.",
+    "metrics_improved": [
+      "native_species_richness",
+      "vegetation_cover",
+      "habitat_connectivity",
+      "soil_organic_carbon"
+    ],
+    "preconditions": [
+      "degraded_land",
+      "native_propagules",
+      "low_productivity",
+      "disturbance_reducible"
+    ],
+    "time_horizon": "long",
+    "source": "IPBES (2019), Global Assessment Report on Biodiversity and Ecosystem Services",
+    "source_tier": "tier1_intergovernmental",
+    "verified": false
+  },
+  {
+    "id": "KC024",
+    "title": "Reduce agricultural nutrient pollution",
+    "domain": "human_impact",
+    "intervention": "Combine soil-test-based fertilizer rates, split applications, legume rotations and vegetated drainage or riparian buffers to reduce nitrogen and phosphorus losses.",
+    "mechanism": "Applying nutrients close to crop demand reduces the pool available for leaching and runoff, while legumes can supply biologically fixed nitrogen through symbiotic fixation. Buffers then intercept remaining nutrient-bearing runoff through plant uptake, sediment deposition and microbial transformations.",
+    "quantified_effect": "Crop diversification has been associated with a median 51% improvement in water-quality outcomes in a large synthesis, while FAO identifies nitrogen-use efficiency as central to reducing nutrient pollution.",
+    "metrics_improved": [
+      "nitrate_leaching",
+      "phosphorus_runoff",
+      "nitrogen_use_efficiency",
+      "stream_water_quality"
+    ],
+    "preconditions": [
+      "high_fertilizer_use",
+      "nutrient_runoff",
+      "cropland",
+      "surface_water_nearby"
+    ],
+    "time_horizon": "medium",
+    "source": "Tamburini et al. (2020), Agricultural diversification promotes multiple ecosystem services without compromising yield, Nature Ecology & Evolution, 4, 1469-1477; FAO (2025), Sustainable Nitrogen Management in Agrifood Systems",
+    "source_tier": "tier3_peer_reviewed",
+    "verified": false
+  },
+  {
+    "id": "KC025",
+    "title": "Restore connectivity between habitat patches",
+    "domain": "human_impact",
+    "intervention": "Reconnect isolated natural habitat patches using native vegetation corridors, riparian corridors, hedgerows or strategically placed stepping-stone habitats.",
+    "mechanism": "Connected habitat reduces the distance organisms must cross through hostile agricultural or urban matrices and increases opportunities for dispersal and recolonization. Gene flow between populations can also increase, reducing isolation effects and supporting persistence after local disturbances.",
+    "quantified_effect": "Global evidence shows that greater landscape complexity and connectivity are associated with higher biodiversity, including increased species richness and abundance across agricultural landscapes.",
+    "metrics_improved": [
+      "habitat_connectivity",
+      "species_richness",
+      "species_abundance",
+      "patch_isolation"
+    ],
+    "preconditions": [
+      "fragmented_habitat",
+      "isolated_patches",
+      "corridor_land_available",
+      "native_vegetation_source"
+    ],
+    "time_horizon": "long",
+    "source": "Tamburini et al. (2022), Complex agricultural landscapes host more biodiversity than simple ones: A global meta-analysis, Proceedings of the National Academy of Sciences",
+    "source_tier": "tier3_peer_reviewed",
+    "verified": false
+  }
+]

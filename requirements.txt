@@ -1,0 +1,12 @@
+streamlit==1.39.0
+pydantic==2.9.2
+python-dotenv==1.0.1
+requests==2.32.3
+numpy==1.26.4
+rank-bm25==0.2.2
+sentence-transformers==3.2.1
+chromadb==0.5.15
+networkx==3.3
+fastapi==0.115.4
+uvicorn==0.32.0
+pytest==8.3.3

@@ -1,0 +1,283 @@
+{
+  "nodes": [
+    {
+      "id": "soil_organic_carbon",
+      "label": "Soil organic carbon",
+      "domain": "soil_health"
+    },
+    {
+      "id": "soil_moisture_retention",
+      "label": "Soil moisture retention",
+      "domain": "soil_health"
+    },
+    {
+      "id": "microbial_diversity",
+      "label": "Soil microbial diversity",
+      "domain": "soil_health"
+    },
+    {
+      "id": "water_infiltration",
+      "label": "Water infiltration rate",
+      "domain": "soil_health"
+    },
+    {
+      "id": "species_richness",
+      "label": "Species richness",
+      "domain": "biodiversity"
+    },
+    {
+      "id": "pollinator_abundance",
+      "label": "Pollinator abundance",
+      "domain": "biodiversity"
+    },
+    {
+      "id": "habitat_connectivity",
+      "label": "Habitat connectivity",
+      "domain": "biodiversity"
+    },
+    { "id": "tree_cover", "label": "Tree cover", "domain": "land_use" },
+    { "id": "crop_diversity", "label": "Crop diversity", "domain": "land_use" },
+    {
+      "id": "fragmentation",
+      "label": "Habitat fragmentation",
+      "domain": "land_use"
+    },
+    {
+      "id": "drought_resilience",
+      "label": "Drought resilience",
+      "domain": "climate"
+    },
+    {
+      "id": "groundwater_recharge",
+      "label": "Groundwater recharge",
+      "domain": "climate"
+    },
+    {
+      "id": "pesticide_load",
+      "label": "Pesticide load",
+      "domain": "human_impact"
+    },
+    {
+      "id": "fertiliser_load",
+      "label": "Fertiliser load",
+      "domain": "human_impact"
+    },
+    {
+      "id": "water_quality",
+      "label": "Water quality",
+      "domain": "human_impact"
+    }
+  ],
+  "edges": [
+    {
+      "source": "soil_organic_carbon",
+      "target": "soil_moisture_retention",
+      "sign": "+",
+      "weight": 0.9,
+      "mechanism": "Higher soil organic carbon increases aggregate stability and micropore formation, allowing soil to retain more plant-available water."
+    },
+    {
+      "source": "soil_organic_carbon",
+      "target": "microbial_diversity",
+      "sign": "+",
+      "weight": 0.8,
+      "mechanism": "Greater organic-carbon inputs provide diverse substrates and microsites that support a larger and more diverse soil microbial community."
+    },
+    {
+      "source": "soil_organic_carbon",
+      "target": "water_infiltration",
+      "sign": "+",
+      "weight": 0.85,
+      "mechanism": "Organic matter promotes stable soil aggregates and biological pore formation, increasing the rate at which water enters and moves through soil."
+    },
+    {
+      "source": "soil_moisture_retention",
+      "target": "drought_resilience",
+      "sign": "+",
+      "weight": 0.9,
+      "mechanism": "Greater soil water storage maintains plant-available water for longer during periods of rainfall deficit."
+    },
+    {
+      "source": "water_infiltration",
+      "target": "groundwater_recharge",
+      "sign": "+",
+      "weight": 0.85,
+      "mechanism": "Higher infiltration transfers a greater fraction of rainfall below the soil surface, increasing the water available for aquifer recharge where geological conditions permit."
+    },
+    {
+      "source": "water_infiltration",
+      "target": "water_quality",
+      "sign": "+",
+      "weight": 0.7,
+      "mechanism": "Greater infiltration reduces rapid surface runoff and allows soils to retain or transform some sediments and dissolved pollutants before water reaches streams."
+    },
+    {
+      "source": "microbial_diversity",
+      "target": "water_quality",
+      "sign": "+",
+      "weight": 0.65,
+      "mechanism": "Diverse microbial communities support decomposition and nutrient transformations that can reduce concentrations of some organic pollutants and reactive nutrients."
+    },
+    {
+      "source": "drought_resilience",
+      "target": "species_richness",
+      "sign": "+",
+      "weight": 0.65,
+      "mechanism": "Greater drought resilience maintains vegetation productivity and habitat resources during water stress, reducing drought-driven local species losses."
+    },
+    {
+      "source": "tree_cover",
+      "target": "soil_organic_carbon",
+      "sign": "+",
+      "weight": 0.85,
+      "mechanism": "Trees add carbon to soil through litterfall, root turnover and rhizodeposition, increasing soil organic-carbon inputs."
+    },
+    {
+      "source": "tree_cover",
+      "target": "soil_moisture_retention",
+      "sign": "+",
+      "weight": 0.7,
+      "mechanism": "Tree litter and root-derived organic matter improve soil structure while canopy cover reduces direct soil evaporation and temperature extremes."
+    },
+    {
+      "source": "tree_cover",
+      "target": "water_infiltration",
+      "sign": "+",
+      "weight": 0.8,
+      "mechanism": "Tree roots create macropores and litter protects soil aggregates, allowing rainfall to infiltrate rather than becoming surface runoff."
+    },
+    {
+      "source": "tree_cover",
+      "target": "groundwater_recharge",
+      "sign": "+",
+      "weight": 0.6,
+      "mechanism": "Improved soil structure and infiltration under suitable forest conditions can increase the fraction of rainfall entering subsurface flow pathways, although tree water use can offset recharge in some settings."
+    },
+    {
+      "source": "tree_cover",
+      "target": "pollinator_abundance",
+      "sign": "+",
+      "weight": 0.7,
+      "mechanism": "Trees and associated understory vegetation provide nesting sites, shelter and seasonal floral resources that can support pollinator populations."
+    },
+    {
+      "source": "tree_cover",
+      "target": "species_richness",
+      "sign": "+",
+      "weight": 0.85,
+      "mechanism": "Greater tree cover creates additional vertical vegetation structure and habitat niches that can support more species."
+    },
+    {
+      "source": "tree_cover",
+      "target": "habitat_connectivity",
+      "sign": "+",
+      "weight": 0.8,
+      "mechanism": "Continuous tree cover can connect otherwise isolated habitat patches and provide movement corridors for forest-associated organisms."
+    },
+    {
+      "source": "crop_diversity",
+      "target": "microbial_diversity",
+      "sign": "+",
+      "weight": 0.75,
+      "mechanism": "Different crops provide distinct root exudates, residues and rooting patterns, creating a wider range of microbial substrates and niches."
+    },
+    {
+      "source": "crop_diversity",
+      "target": "pollinator_abundance",
+      "sign": "+",
+      "weight": 0.8,
+      "mechanism": "A diversity of crops can extend the timing and variety of floral resources and increase habitat heterogeneity available to pollinators."
+    },
+    {
+      "source": "crop_diversity",
+      "target": "species_richness",
+      "sign": "+",
+      "weight": 0.8,
+      "mechanism": "Crop diversification creates more varied habitat structure and resource conditions than continuous monoculture, supporting a broader range of associated organisms."
+    },
+    {
+      "source": "crop_diversity",
+      "target": "pesticide_load",
+      "sign": "-",
+      "weight": 0.6,
+      "mechanism": "Crop rotation and diversification can interrupt host-specific pest cycles and reduce dependence on repeated broad-spectrum pesticide applications."
+    },
+    {
+      "source": "fragmentation",
+      "target": "habitat_connectivity",
+      "sign": "-",
+      "weight": 0.95,
+      "mechanism": "Increasing fragmentation separates habitat patches and increases gaps between them, reducing the continuity of suitable movement pathways."
+    },
+    {
+      "source": "fragmentation",
+      "target": "species_richness",
+      "sign": "-",
+      "weight": 0.85,
+      "mechanism": "Fragmentation reduces available habitat area and isolates populations, increasing local extinction risk and limiting recolonization."
+    },
+    {
+      "source": "fragmentation",
+      "target": "pollinator_abundance",
+      "sign": "-",
+      "weight": 0.75,
+      "mechanism": "Fragmented landscapes reduce the availability and continuity of nesting and floral resources, increasing movement costs for pollinators."
+    },
+    {
+      "source": "habitat_connectivity",
+      "target": "species_richness",
+      "sign": "+",
+      "weight": 0.85,
+      "mechanism": "Connected habitats facilitate dispersal, recolonization and gene flow, allowing more species to persist across the landscape."
+    },
+    {
+      "source": "habitat_connectivity",
+      "target": "pollinator_abundance",
+      "sign": "+",
+      "weight": 0.75,
+      "mechanism": "Connected flowering and nesting habitats reduce movement barriers and improve access to complementary resources needed throughout pollinator life cycles."
+    },
+    {
+      "source": "pesticide_load",
+      "target": "pollinator_abundance",
+      "sign": "-",
+      "weight": 0.9,
+      "mechanism": "Pesticide exposure can cause direct mortality, behavioral impairment and reduced reproduction in pollinators, with effects depending on compound and exposure."
+    },
+    {
+      "source": "pesticide_load",
+      "target": "species_richness",
+      "sign": "-",
+      "weight": 0.75,
+      "mechanism": "Broad-spectrum pesticide exposure can reduce populations of non-target organisms and simplify food webs, lowering the number of species able to persist."
+    },
+    {
+      "source": "pesticide_load",
+      "target": "water_quality",
+      "sign": "-",
+      "weight": 0.9,
+      "mechanism": "Pesticides transported by runoff, erosion and drainage can increase toxic contaminant concentrations in surface waters."
+    },
+    {
+      "source": "fertiliser_load",
+      "target": "water_quality",
+      "sign": "-",
+      "weight": 0.9,
+      "mechanism": "Excess nitrogen and phosphorus escaping fields through runoff and leaching can cause eutrophication, oxygen depletion and elevated nitrate concentrations in water."
+    },
+    {
+      "source": "fertiliser_load",
+      "target": "species_richness",
+      "sign": "-",
+      "weight": 0.65,
+      "mechanism": "Excess nutrient enrichment can favor a small number of fast-growing species and reduce light or habitat availability for nutrient-sensitive species."
+    },
+    {
+      "source": "water_quality",
+      "target": "species_richness",
+      "sign": "+",
+      "weight": 0.8,
+      "mechanism": "Lower concentrations of toxic contaminants and excess nutrients maintain oxygen availability and physiological conditions suitable for a wider range of aquatic and riparian species."
+    }
+  ]
+}
