@@ -1,11 +1,10 @@
-
+from __future__ import annotations
 import os
 import streamlit as st
 
 for key in ("GEMINI_API_KEY", "HF_API_KEY"):
     if key in st.secrets:
         os.environ[key] = st.secrets[key]
-from __future__ import annotations
 
 import streamlit as st
 
