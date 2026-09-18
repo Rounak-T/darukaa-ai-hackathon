@@ -1,28 +1,26 @@
 from __future__ import annotations
-import os
+# import os
 import streamlit as st
-
-for key in ("GEMINI_API_KEY", "HF_API_KEY"):
-    if key in st.secrets:
-        os.environ[key] = st.secrets[key]
-
-import streamlit as st
-
+ 
+# for key in ("GEMINI_API_KEY", "HF_API_KEY"):
+#     if key in st.secrets:
+#         os.environ[key] = st.secrets[key]
+ 
 from core.recommender import advise
 from core.retriever import get_retriever
 from core.schemas import SiteProfile
 from core.slots import derive_conditions, extract_profile
 from core.verifier import verify
-
+ 
 st.set_page_config(page_title="Darukaa Biodiversity Intelligence", page_icon="🌿", layout="wide")
-
+ 
 # ---------------- theme ----------------
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
+ 
     html, body, [class*="css"]  { font-family: 'Inter', sans-serif; }
-
+ 
     :root {
         --forest: #17331f;
         --forest-light: #2c4a34;
@@ -30,9 +28,9 @@ st.markdown("""
         --sage-light: #eaf2ea;
         --paper: #fbfbf9;
     }
-
+ 
     .stApp { background-color: var(--paper); }
-
+ 
     /* header */
     .db-hero {
         padding: 2.2rem 0 1.2rem 0;
@@ -55,7 +53,7 @@ st.markdown("""
         margin-bottom: 0.5rem;
     }
     .db-sub { color: #5c6b60; font-size: 0.98rem; max-width: 640px; }
-
+ 
     /* buttons */
     .stButton > button {
         background-color: var(--forest) !important;
@@ -67,11 +65,11 @@ st.markdown("""
         transition: background-color 0.15s ease;
     }
     .stButton > button:hover { background-color: var(--forest-light) !important; }
-
+ 
     /* sidebar */
     section[data-testid="stSidebar"] { background-color: var(--sage-light); border-right: 1px solid #dbe6dc; }
     section[data-testid="stSidebar"] h2, section[data-testid="stSidebar"] h3 { color: var(--forest); }
-
+ 
     /* chat bubbles */
     div[data-testid="stChatMessage"] {
         background-color: white;
@@ -79,7 +77,7 @@ st.markdown("""
         border-radius: 12px;
         padding: 0.4rem 0.8rem;
     }
-
+ 
     /* form container */
     .db-card {
         background: white;
@@ -88,10 +86,10 @@ st.markdown("""
         padding: 1.4rem 1.6rem;
         margin-bottom: 1.2rem;
     }
-
+ 
     h3 { color: var(--forest) !important; }
     .stAlert { border-radius: 10px; }
-
+ 
     div[data-testid="stChatMessageContent"] * {
         font-family: 'Inter', sans-serif !important;
         font-size: 0.95rem !important;
@@ -103,28 +101,28 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
-
+ 
 if "profile" not in st.session_state:
     st.session_state.profile = SiteProfile()
 if "messages" not in st.session_state:
     st.session_state.messages = []
 if "last_debug" not in st.session_state:
     st.session_state.last_debug = None
-
-
+ 
+ 
 def render_response(resp) -> str:
     if resp.mode == "clarifying":
         lines = [resp.summary, ""]
         for q in resp.clarifying_questions:
             lines.append(f"- {q}")
         return "\n".join(lines)
-
+ 
     lines = []
     if resp.summary:
         lines += [f"**Assistant:** {resp.summary}", ""]
     if resp.diagnosis:
         lines += [f"**Diagnosis.** {resp.diagnosis}", ""]
-
+ 
     for i, r in enumerate(resp.recommendations, 1):
         flag = "" if r.grounded else "  *(grounding flagged)*"
         lines.append(f"### {i}. {r.action}{flag}")
@@ -140,8 +138,8 @@ def render_response(resp) -> str:
             lines.append(f"\n> Verifier note: {r.grounding_note}")
         lines.append("")
     return "\n".join(lines)
-
-
+ 
+ 
 def run_pipeline(force: bool = False) -> None:
     profile = st.session_state.profile
     conditions = derive_conditions(profile)
@@ -152,13 +150,13 @@ def run_pipeline(force: bool = False) -> None:
     }
     resp = verify(advise(profile, force_answer=force))
     st.session_state.messages.append({"role": "assistant", "content": render_response(resp)})
-
-
+ 
+ 
 def run_chat_turn(user_text: str) -> None:
     st.session_state.messages.append({"role": "user", "content": user_text})
     st.session_state.profile = extract_profile(user_text, st.session_state.profile)
     run_pipeline()
-
+ 
 # ---------------- hero ----------------
 st.markdown("""
 <div class="db-hero">
@@ -168,7 +166,7 @@ st.markdown("""
     evidence base and audited for scientific grounding before it reaches you.</div>
 </div>
 """, unsafe_allow_html=True)
-
+ 
 # ---------------- quick-entry form (fast path) ----------------
 if not st.session_state.messages:
     st.markdown('<div class="db-card">', unsafe_allow_html=True)
@@ -181,7 +179,7 @@ if not st.session_state.messages:
         rainfall = st.selectbox("Rainfall pattern", ["low", "moderate", "high", "erratic"])
         region = st.selectbox("Region type", ["arid", "semi_arid", "subhumid", "humid", "coastal"])
     crop = st.text_input("Main crop (optional)", placeholder="e.g. wheat")
-
+ 
     if st.button("Get recommendations →"):
         st.session_state.profile = SiteProfile(
             soil_organic_carbon_pct=soc, land_use=land_use,
@@ -200,28 +198,20 @@ if not st.session_state.messages:
             st.error(f"Something went wrong generating the recommendation: {exc}")
             st.session_state.messages.pop()  # remove the user message so form reappears
         st.rerun()
-
+ 
     st.markdown('</div>', unsafe_allow_html=True)
-    hint_col, reset_col = st.columns([5, 1])
-    with hint_col:
-        st.caption("Prefer to just describe it in your own words? Type below instead.")
-    with reset_col:
-        if st.button("Start over", use_container_width=True):
-            st.session_state.profile = SiteProfile()
-            st.session_state.messages = []
-            st.session_state.last_debug = None
-            st.rerun()
-
+    st.caption("Prefer to just describe it in your own words? Type below instead.")
+ 
 # ---------------- chat ----------------
 for m in st.session_state.messages:
     with st.chat_message(m["role"]):
         st.markdown(m["content"])
-
+ 
 if prompt := st.chat_input("Describe your land, or ask a follow-up..."):
     with st.spinner("Retrieving evidence and tracing causal pathways..."):
         run_chat_turn(prompt)
     st.rerun()
-
+ 
 if st.session_state.last_debug:
     with st.expander("🔍 Pipeline transparency - how this answer was produced"):
         d = st.session_state.last_debug
@@ -229,3 +219,11 @@ if st.session_state.last_debug:
         st.markdown("**Retrieved evidence:**")
         for c in d["retrieved"]:
             st.markdown(f"`{c['id']}` **{c['title']}** — score `{c['retrieval_score']}` via `{c['retrieved_by']}`")
+ 
+# ---------------- start over (always visible, bottom of page) ----------------
+st.divider()
+if st.button("Start over", use_container_width=False):
+    st.session_state.profile = SiteProfile()
+    st.session_state.messages = []
+    st.session_state.last_debug = None
+    st.rerun()
